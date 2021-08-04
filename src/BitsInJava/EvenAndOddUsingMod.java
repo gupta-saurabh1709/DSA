@@ -2,7 +2,7 @@ package BitsInJava;
 
 import java.util.Scanner;
 
-public class EvenAndOddUsingBit {
+public class EvenAndOddUsingMod {
     public static void main(String[] args) {
         long start = System.nanoTime();
         Scanner scan = new Scanner(System.in);
@@ -17,7 +17,7 @@ public class EvenAndOddUsingBit {
     }
 
     private static void checkEvenOdd(int num) {
-        if ((num & 1) == 0)
+        if ((num % 2) == 0)
             System.out.println("Number is Even");
         else
             System.out.println("Number is Odd");
